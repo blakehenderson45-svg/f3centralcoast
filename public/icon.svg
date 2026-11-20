@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262830"/>
+      <stop offset="55%" stop-color="#17181c"/>
+      <stop offset="100%" stop-color="#0f1012"/>
+    </linearGradient>
+    <linearGradient id="crimsonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7676"/>
+      <stop offset="50%" stop-color="#f85e5e"/>
+      <stop offset="100%" stop-color="#c93636"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Industrial Crest Backing -->
+  <rect width="512" height="512" rx="108" fill="url(#shieldBg)"/>
+  <rect width="484" height="484" x="14" y="14" rx="94" fill="none" stroke="#f85e5e" stroke-opacity="0.35" stroke-width="6"/>
+
+  <!-- Outer Shield Contour -->
+  <path d="M256 46 L422 106 V254 C422 356 350 426 256 466 C162 426 90 356 90 254 V106 Z"
+        fill="#131417" stroke="url(#crimsonGrad)" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- Inner Tactical Shield Line -->
+  <path d="M256 72 L396 122 V252 C396 340 336 400 256 436 C176 400 116 340 116 252 V122 Z"
+        fill="none" stroke="#363944" stroke-width="4"/>
+
+  <!-- Bold Stencil F3 Monogram -->
+  <g fill="#f4f5f7">
+    <!-- F -->
+    <path d="M150 156 H252 V190 H188 V224 H240 V256 H188 V318 H150 Z"/>
+  </g>
+  <g fill="url(#crimsonGrad)">
+    <!-- 3 -->
+    <path d="M268 156 H358 C372 156 380 165 380 179 V216 C380 228 373 236 361 240 C375 244 382 253 382 267 V296 C382 310 372 318 356 318 H268 V284 H342 V256 H284 V224 H342 V190 H268 Z"/>
+  </g>
+
+  <!-- Three Coastal Bars (Fitness / Fellowship / Faith) -->
+  <path d="M162 352 Q208 336 256 352 T350 352" fill="none" stroke="#f85e5e" stroke-width="10" stroke-linecap="round"/>
+  <path d="M188 380 Q222 368 256 380 T324 380" fill="none" stroke="#a6aab4" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+  <path d="M218 405 Q237 397 256 405 T294 405" fill="none" stroke="#f85e5e" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+</svg>

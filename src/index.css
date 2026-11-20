@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Oswald", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #121315;
+  color: #f4f5f7;
+  overflow-x: hidden;
+}
+
+/* Subtle gritty asphalt noise overlay */
+.grit-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+}
+
+/* Subtle diagonal industrial stripe background */
+.tactical-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(248, 94, 94, 0.08),
+    rgba(248, 94, 94, 0.08) 6px,
+    transparent 6px,
+    transparent 14px
+  );
+}
+
+/* Tactical hairline grid */
+.tactical-grid {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Leaflet Dark Theme Overrides */
+.leaflet-container {
+  background: #0d0e10 !important;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif !important;
+}
+
+/* Dark tactical inversion for OpenStreetMap tiles (keeps markers/popups untouched) */
+.f3-map-dark .leaflet-tile-pane {
+  filter: invert(100%) hue-rotate(180deg) brightness(86%) contrast(98%) saturate(75%);
+}
+
+/* Slight moody contrast on satellite imagery */
+.f3-map-satellite .leaflet-tile-pane {
+  filter: brightness(84%) contrast(108%) saturate(92%);
+}
+
+.leaflet-control-zoom {
+  border: 1px solid #32353d !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  background-color: #1a1b1e !important;
+  color: #e4e5e8 !important;
+  border-bottom: 1px solid #2e3038 !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #26282e !important;
+  color: #f85e5e !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(18, 19, 21, 0.8) !important;
+  color: #777a84 !important;
+  font-size: 10px !important;
+  border-top-left-radius: 4px;
+}
+
+.leaflet-control-attribution a {
+  color: #a1a5b0 !important;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #1a1b1e !important;
+  color: #f4f5f7 !important;
+  border: 1px solid #353842 !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65) !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px !important;
+}
+
+.leaflet-popup-close-button {
+  color: #9ca0aa !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #f85e5e !important;
+}
+
+/* Custom pulsing map beacon */
+@keyframes f3-beacon-pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.35);
+    opacity: 0;
+  }
+}
+
+.f3-pin-pulse {
+  animation: f3-beacon-pulse 2.2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+/* Subtle dark scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121315;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c2e35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #40434e;
+}

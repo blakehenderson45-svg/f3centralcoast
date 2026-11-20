@@ -1,0 +1,160 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: users
+    // Document ID: {userId}
+    // Fields:
+    //   - name: string (required, < 50 chars)
+    //   - email: string (required, valid email)
+    //   - region: string (optional, < 100 chars)
+    //   - role: string (required, 'user' or 'admin')
+    //
+    // Collection: workouts
+    // Document ID: {workoutId}
+    // Fields:
+    //   - name: string (required, < 100 chars)
+    //   - targetTime: number (required, > 0)
+    //   - sections: list (required, < 10 items)
+    //   - date: string (required, ISO 8601 date string)
+    //   - authorUid: string (required, matches auth uid)
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isDocOwner() {
+      return isAuthenticated() && request.auth.uid == resource.data.authorUid;
+    }
+
+    function uidUnchanged() {
+      return !('authorUid' in request.resource.data) || request.resource.data.authorUid == request.auth.uid;
+    }
+
+    function uidNotModified() {
+      return !('authorUid' in request.resource.data) || request.resource.data.authorUid == resource.data.authorUid;
+    }
+
+    function hasRequiredFields(fields) {
+      return request.resource.data.keys().hasAll(fields);
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    function isValidEmail(email) {
+      return email is string && email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    function isValidDateString(dateStr) {
+      return dateStr is string && dateStr.matches("^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.*Z?$");
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && request.auth.token.email == "blake.henderson45@gmail.com" && request.auth.token.email_verified == true;
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+
+    function isValidUser(data) {
+      return hasOnlyAllowedFields(['name', 'email', 'region', 'role', 'dob', 'stats', 'chelseaPR', 'photoURL']) &&
+             data.name is string && data.name.size() > 0 && data.name.size() < 50 &&
+             data.email is string && isValidEmail(data.email) &&
+             (!('region' in data) || (data.region is string && data.region.size() < 100)) &&
+             (!('dob' in data) || (data.dob is string && data.dob.size() < 20)) &&
+             (!('stats' in data) || (data.stats is map)) &&
+             (!('chelseaPR' in data) || (data.chelseaPR is number && data.chelseaPR >= 0)) &&
+             (!('photoURL' in data) || data.photoURL == null || (data.photoURL is string && data.photoURL.size() < 500000)) &&
+             data.role in ['user', 'admin'] &&
+             (data.role == 'admin' ? (request.auth.token.email == "blake.henderson45@gmail.com") : true);
+    }
+
+    function isValidWorkout(data) {
+      return hasOnlyAllowedFields(['id', 'name', 'targetTime', 'sections', 'date', 'authorUid']) &&
+             data.id is string && data.id.size() > 0 &&
+             data.name is string && data.name.size() > 0 && data.name.size() < 100 &&
+             data.targetTime is number && data.targetTime > 0 &&
+             data.sections is list && data.sections.size() < 10 &&
+             isValidDateString(data.date) &&
+             data.authorUid is string && data.authorUid == request.auth.uid;
+    }
+
+    function isValidChelseaWorkout(data) {
+      return hasOnlyAllowedFields(['userId', 'userName', 'date', 'totalTime', 'totalRestTime', 'totalRounds', 'totalPullups', 'totalPushups', 'totalSquats', 'repsPerMinute']) &&
+             data.userId is string && (data.userId == request.auth.uid || isAdmin()) &&
+             data.userName is string && data.userName.size() > 0 && data.userName.size() < 50 &&
+             isValidDateString(data.date) &&
+             data.totalTime is number && data.totalTime >= 0 &&
+             data.totalRestTime is number && data.totalRestTime >= 0 &&
+             data.totalRounds is number && data.totalRounds >= 0 &&
+             data.totalPullups is number && data.totalPullups >= 0 &&
+             data.totalPushups is number && data.totalPushups >= 0 &&
+             data.totalSquats is number && data.totalSquats >= 0 &&
+             data.repsPerMinute is number && data.repsPerMinute >= 0;
+    }
+
+    function isValidExerciseNote(data) {
+      return hasOnlyAllowedFields(['exerciseName', 'note', 'updatedAt', 'category']) &&
+             data.exerciseName is string && data.exerciseName.size() > 0 && data.exerciseName.size() < 100 &&
+             data.note is string && data.note.size() < 5000 &&
+             (!('updatedAt' in data) || (data.updatedAt is string && data.updatedAt.size() < 50)) &&
+             (!('category' in data) || (data.category is string && data.category.size() < 50));
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+
+    match /exerciseNotes/{noteId} {
+      allow read: if true;
+      allow create, update: if isAdmin() && isValidExerciseNote(request.resource.data);
+      allow delete: if isAdmin();
+    }
+
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow create: if isAuthenticated() && isValidUser(request.resource.data) && 
+                    ((isOwner(userId) && request.resource.data.role == 'user') || isAdmin());
+      allow update: if isAuthenticated() && isValidUser(request.resource.data) && 
+                    ((isOwner(userId) && request.resource.data.role == resource.data.role) || isAdmin());
+      allow delete: if isAdmin();
+
+      match /exerciseNotes/{noteId} {
+        allow read: if isOwner(userId) || isAdmin();
+        allow create, update: if isOwner(userId) && isValidExerciseNote(request.resource.data);
+        allow delete: if isOwner(userId) || isAdmin();
+      }
+    }
+
+    match /workouts/{workoutId} {
+      allow read: if isDocOwner() || isAdmin();
+      allow create: if isAuthenticated() && isValidWorkout(request.resource.data) && uidUnchanged();
+      allow update: if isAuthenticated() && isValidWorkout(request.resource.data) && isDocOwner() && uidNotModified();
+      allow delete: if isDocOwner() || isAdmin();
+    }
+
+    match /chelseaWorkouts/{workoutId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && isValidChelseaWorkout(request.resource.data);
+      allow update: if isAdmin() && isValidChelseaWorkout(request.resource.data);
+      allow delete: if isAuthenticated() && resource.data.userId == request.auth.uid || isAdmin();
+    }
+  }
+}

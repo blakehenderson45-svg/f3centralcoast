@@ -1,0 +1,17 @@
+{
+  "name": "Central Coast F3",
+  "short_name": "Central Coast F3",
+  "description": "Free, peer-led outdoor workouts for men in Santa Barbara and Carpinteria, CA. Fitness, Fellowship, and Faith.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121315",
+  "theme_color": "#121315",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

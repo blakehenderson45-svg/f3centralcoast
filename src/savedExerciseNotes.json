@@ -1,0 +1,656 @@
+{
+  "side_straddle_hop": {
+    "exerciseName": "Side Straddle Hop",
+    "note": "From a standing position with feet together and arms at your sides, jump, simultaneously spreading your legs wide and raising your arms overhead to clap. Immediately jump back to the starting position, bringing feet together and arms to your sides.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:32.961Z"
+  },
+  "butt_kicker": {
+    "exerciseName": "Butt Kicker",
+    "note": "Stand upright and begin to jog, actively bringing your heels up towards your glutes with each step. Aim to make contact or come very close to your buttocks with your heels.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:33.135Z"
+  },
+  "windmill": {
+    "exerciseName": "Windmill",
+    "note": "From a wide stance with arms extended laterally, bend at the waist, reaching one hand towards the opposite foot as the other arm points skyward. Return upright and alternate sides.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:33.518Z"
+  },
+  "motivators": {
+    "exerciseName": "Motivators",
+    "note": "Begin in a high plank position, perform one push-up by lowering the chest to the ground and pushing back up. Immediately jump both feet wide apart and then back together to complete one repetition.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:33.528Z"
+  },
+  "imperial_walker": {
+    "exerciseName": "Imperial Walker",
+    "note": "Perform a walking lunge, simultaneously extending both arms straight overhead with each forward step before returning them to the sides as the next lunge begins.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:33.540Z"
+  },
+  "hillbilly": {
+    "exerciseName": "Hillbilly",
+    "note": "From a high plank position, alternately draw one knee towards its corresponding elbow, then extend the leg back to the starting plank. Repeat by alternating sides.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:33.663Z"
+  },
+  "good_morning": {
+    "exerciseName": "Good Morning",
+    "note": "Standing with feet shoulder-width apart and a slight bend in the knees, hinge at the hips while keeping a straight back, lowering the torso towards parallel with the ground. Drive through the heels and glutes to return to the upright starting position.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:35.633Z"
+  },
+  "high_knees": {
+    "exerciseName": "High Knees",
+    "note": "From a standing position, quickly alternate driving each knee upward towards the chest or waist level, while simultaneously pumping the opposite arm forward. The movement mimics running in place with an exaggerated knee lift.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:35.724Z"
+  },
+  "arm_circles": {
+    "exerciseName": "Arm Circles",
+    "note": "Stand upright with arms extended straight out to the sides, parallel to the ground. Rotate arms in continuous circles, either forward or backward, maintaining straight elbows.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:35.758Z"
+  },
+  "cherry_picker": {
+    "exerciseName": "Cherry Picker",
+    "note": "From a plank position, perform a push-up. As you push back up, simultaneously raise one leg straight behind you towards the ceiling. Lower the leg as you begin the next repetition, alternating legs with each push-up.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:36.551Z"
+  },
+  "toy_soldier": {
+    "exerciseName": "Toy Soldier",
+    "note": "From a standing position, swing one leg straight forward and upward while simultaneously reaching the opposite hand towards the toes. Alternate legs and arms, repeating the movement.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:37.190Z"
+  },
+  "abe_vigoda": {
+    "exerciseName": "Abe Vigoda",
+    "note": "One partner maintains a high plank position while the other performs a shuttle sprint to a designated point and back, tapping the planking partner upon return. Partners then switch roles, repeating the sequence.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:37.822Z"
+  },
+  "don_quixote": {
+    "exerciseName": "Don Quixote",
+    "note": "Stand with arms extended straight out to the sides at shoulder height. Rotate both arms simultaneously in large forward and/or backward circles, keeping them straight.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:40.024Z"
+  },
+  "cotton_picker": {
+    "exerciseName": "Cotton Picker",
+    "note": "From a standing position, bend at the hips with legs mostly straight, reaching hands to touch the ground between the feet, then return to standing.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:40.620Z"
+  },
+  "phelps": {
+    "exerciseName": "Phelps",
+    "note": "Lie prone, simultaneously lifting your chest, arms, and legs off the ground. While maintaining this elevated position, perform small, rapid, alternating up-and-down flutter kicks with your legs.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:40.726Z"
+  },
+  "mosey": {
+    "exerciseName": "Mosey",
+    "note": "A mosey involves moving the body forward at a light, sustained jog or brisk walk. Legs alternately propel the body, with arms swinging naturally in opposition, maintaining an easy, non-strenuous pace.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:41.038Z"
+  },
+  "goofball": {
+    "exerciseName": "Goofball",
+    "note": "From standing, drop to a plank position, perform a push-up, return to standing, and execute a jump with arms extended overhead.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:41.080Z"
+  },
+  "fazio_arm_circles": {
+    "exerciseName": "Fazio Arm Circles",
+    "note": "Stand with arms extended straight out to the sides, parallel to the ground. Perform small to medium circles forward with the arms, then reverse direction and perform circles backward.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:42.445Z"
+  },
+  "plank_jack": {
+    "exerciseName": "Plank Jack",
+    "note": "Begin in a high plank position. While maintaining core stability, simultaneously jump both feet outwards, then immediately jump them back together.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:44.559Z"
+  },
+  "overhead_claps": {
+    "exerciseName": "Overhead Claps",
+    "note": "From a standing position, powerfully raise both arms out to the sides and up overhead until the hands meet in a clap. Immediately lower arms back to the starting position.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:44.766Z"
+  },
+  "seal_claps": {
+    "exerciseName": "Seal Claps",
+    "note": "Lying prone, simultaneously lift your chest, head, and legs off the ground, then bring your hands together in a clapping motion under your chest before returning to the starting position.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:44.807Z"
+  },
+  "bear_hugs": {
+    "exerciseName": "Bear Hugs",
+    "note": "Participants stand facing each other and tightly wrap their arms around each other's torsos in a sustained embrace.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:45.358Z"
+  },
+  "people_s_chair": {
+    "exerciseName": "People's Chair",
+    "note": "Participants stand in a line, facing the same direction. Simultaneously, everyone lowers into a squat, bending knees to 90 degrees, with each person leaning their back against the thighs of the person directly behind them.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:45.835Z"
+  },
+  "willie_mays_hays": {
+    "exerciseName": "Willie Mays Hays",
+    "note": "From a plank position, lower the chest to the ground and push back up to complete one merkin. Immediately, kick the feet forward to the hands, stand explosively, and jump with hands clapped overhead.",
+    "category": "warmup",
+    "updatedAt": "2026-10-11T02:49:48.152Z"
+  },
+  "bear_crawl": {
+    "exerciseName": "Bear Crawl",
+    "note": "Start on all fours with hands and feet on the ground, knees hovering slightly above. Move forward by simultaneously advancing one hand and the opposite foot, keeping the body low and knees from touching the ground.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:50.251Z"
+  },
+  "reverse_lunge": {
+    "exerciseName": "Reverse Lunge",
+    "note": "From a standing position, step one leg backward, lowering the hips until both knees are bent at approximately 90 degrees, with the rear knee hovering above the ground. Push off the front heel to return to the starting position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:50.335Z"
+  },
+  "sprint": {
+    "exerciseName": "Sprint",
+    "note": "The body explosively propels forward at maximum speed, characterized by powerful leg drives, high knee lifts, and strong fore-aft arm pumps.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:50.419Z"
+  },
+  "diamond_merkin": {
+    "exerciseName": "Diamond Merkin",
+    "note": "Begin in a plank position with hands directly under the chest, thumbs and index fingers touching to form a diamond shape on the ground. Lower the chest towards your hands by bending the elbows, then push back up to the starting position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:50.439Z"
+  },
+  "box_jump___ledge_jump": {
+    "exerciseName": "Box Jump / Ledge Jump",
+    "note": "From a standing position facing a raised surface, explosively jump upwards and forwards, landing softly with both feet on the surface and standing upright before stepping down.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:50.675Z"
+  },
+  "dips": {
+    "exerciseName": "Dips",
+    "note": "From a starting position suspended on parallel bars with straight arms, the body lowers by bending the elbows until the shoulders are below the elbows. The movement concludes by extending the arms to press the body back up to the starting straight-arm position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:50.784Z"
+  },
+  "wheelbarrow": {
+    "exerciseName": "Wheelbarrow",
+    "note": "One participant holds the other's ankles, elevating their legs. The second participant, maintaining a plank-like body position, walks forward solely on their hands.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:53.184Z"
+  },
+  "jump_squat": {
+    "exerciseName": "Jump Squat",
+    "note": "Lower into a deep squat, then explosively jump straight up, extending your body fully. Land softly back into a deep squat position, absorbing impact to complete the repetition.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:53.400Z"
+  },
+  "burpee": {
+    "exerciseName": "Burpee",
+    "note": "From a standing position, squat down to place hands on the ground, then kick feet back into a plank and lower your chest to the floor. Immediately reverse the motion by pushing up, jumping feet forward to a squat, and then explosively jumping up with hands overhead.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:53.704Z"
+  },
+  "lunge_walk": {
+    "exerciseName": "Lunge Walk",
+    "note": "From a standing position, step forward with one leg into a lunge, lowering your hips until both knees are bent at 90 degrees and the front knee is directly over the ankle. Drive off the back foot, bringing it forward to immediately step into a lunge with the opposite leg, continuously alternating legs to move forward.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:53.903Z"
+  },
+  "merkin": {
+    "exerciseName": "Merkin",
+    "note": "Starting in a high plank position, lower the body by bending the elbows until the chest touches the ground. Then, push back up to full arm extension, maintaining a straight line from head to heels throughout the movement.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:54.628Z"
+  },
+  "carolina_dry_dock": {
+    "exerciseName": "Carolina Dry Dock",
+    "note": "From a high plank position, lower your hips towards the ground, then simultaneously push them upward and drive one knee towards your chest. Alternate knees with each upward hip drive.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:56.773Z"
+  },
+  "mountain_climber": {
+    "exerciseName": "Mountain Climber",
+    "note": "From a plank position, alternately drive one knee towards the chest, then return it to the starting position, mimicking running in place while keeping hips stable.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:58.361Z"
+  },
+  "bobby_hurley": {
+    "exerciseName": "Bobby Hurley",
+    "note": "Start standing, then squat down until fingertips touch the ground, keeping the chest up. Return to the standing position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:58.833Z"
+  },
+  "squat": {
+    "exerciseName": "Squat",
+    "note": "From a standing position, push hips back and bend knees, lowering the body as if sitting in a chair until thighs are parallel to the ground or lower. Drive through the heels to extend hips and knees, returning to the upright standing position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:58.848Z"
+  },
+  "bbsu__big_boy_sit_up_": {
+    "exerciseName": "BBSU (Big Boy Sit Up)",
+    "note": "Begin lying flat on your back, legs straight and together, with arms extended overhead and hands clasped. Sit up, keeping your legs straight, to touch your toes (or past them) with your hands, then return to the starting position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:49:59.327Z"
+  },
+  "apollo_creed": {
+    "exerciseName": "Apollo Creed",
+    "note": "From a standing position, drop into a plank, perform a push-up, jump feet to hands, and return to standing. Immediately follow this with four rapid, alternating punches thrown forward.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:00.756Z"
+  },
+  "al_gore": {
+    "exerciseName": "Al Gore",
+    "note": "From a standing position, lift one knee high towards the chest as if stepping onto an elevated platform, then return the foot to the ground. This movement is typically alternated rapidly between legs.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:00.905Z"
+  },
+  "crab_walk": {
+    "exerciseName": "Crab Walk",
+    "note": "Begin seated with hands on the floor behind you, fingers pointed back, and feet flat. Lift your hips off the ground and crawl forward or backward by moving your hands and feet simultaneously or alternately.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:03.070Z"
+  },
+  "curls": {
+    "exerciseName": "Curls",
+    "note": "With arms extended downwards, bend elbows to bring hands toward the shoulders. Control the movement to lower hands back to the starting position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:03.123Z"
+  },
+  "chuck_norris": {
+    "exerciseName": "Chuck Norris",
+    "note": "From a plank position, bring one knee towards the opposite elbow, then extend that leg straight out to the side, maintaining hip height. Return to plank and alternate sides.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:03.130Z"
+  },
+  "broad_jump": {
+    "exerciseName": "Broad Jump",
+    "note": "From a standing position, a person squats slightly and swings their arms back, then powerfully explodes forward off both feet. The landing is absorbed by bending the knees and hips.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:04.138Z"
+  },
+  "bombs": {
+    "exerciseName": "BOMBS",
+    "note": "The term \"BOMBS\" in F3 is an acronym for a workout *circuit*, not a single exercise. It represents a sequence of Burpees, Overhead Claps, Merkins (push-ups), Big Boy Sit-ups, and Squats, each performed as distinct movements.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:05.802Z"
+  },
+  "caterpillar": {
+    "exerciseName": "Caterpillar",
+    "note": "From standing, bend at the waist to place hands on the floor. Walk hands forward into a plank position while keeping feet stationary, then walk feet towards hands until they are close to the hands.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:06.580Z"
+  },
+  "hand_release_merkin": {
+    "exerciseName": "Hand Release Merkin",
+    "note": "Start in a plank position; lower your body until your chest touches the ground, then lift your hands off the floor briefly before placing them back and pushing up to the starting plank.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:08.339Z"
+  },
+  "duck_walk": {
+    "exerciseName": "Duck Walk",
+    "note": "Begin in a deep squat position with glutes near the heels. Propel forward by taking short, alternating steps, keeping the torso upright and maintaining the low squat throughout the movement.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:08.490Z"
+  },
+  "gorilla_hump": {
+    "exerciseName": "Gorilla Hump",
+    "note": "Start in a deep squat with hands planted on the ground between the feet. Forcefully thrust the pelvis forward and slightly upward, then recover to the starting squat position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:10.264Z"
+  },
+  "iron_cross": {
+    "exerciseName": "Iron Cross",
+    "note": "From a supine position with arms extended to the sides, lift straight legs together and sweep them from side to side, aiming to touch the ground while keeping shoulders flat.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:10.365Z"
+  },
+  "half_burpee": {
+    "exerciseName": "Half Burpee",
+    "note": "From a standing position, squat to place hands on the ground, then kick both feet back simultaneously into a plank position. Immediately pull feet forward to return to a squat, then stand back up.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:10.947Z"
+  },
+  "derkin": {
+    "exerciseName": "Derkin",
+    "note": "From a standing position, squat down, place hands on the ground, kick feet back to a plank, perform a push-up, then jump feet forward into a squat. Immediately stand and execute a jump squat.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:13.136Z"
+  },
+  "lt__dan": {
+    "exerciseName": "Lt. Dan",
+    "note": "Perform a forward lunge with one leg, then a forward lunge with the other leg, immediately followed by a full squat. This three-part sequence counts as one repetition.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:15.203Z"
+  },
+  "mike_tyson": {
+    "exerciseName": "Mike Tyson",
+    "note": "From a forearm plank position, bring one knee across the body towards the opposite elbow, then return the leg to the starting position, alternating sides.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:15.391Z"
+  },
+  "kettlebell_swing": {
+    "exerciseName": "Kettlebell Swing",
+    "note": "From a hinged hip position, forcefully extend hips and knees, driving the kettlebell forward and up to chest height with glute power. Allow the bell to swing back down, hinging at the hips again to absorb momentum and load for the next powerful drive.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:15.612Z"
+  },
+  "lbc": {
+    "exerciseName": "LBC",
+    "note": "Lie on your back with knees bent and feet flat, hands crossed over the chest or lightly behind the head. Lift only your head and shoulders slightly off the ground, engaging the core, then lower back down.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:15.721Z"
+  },
+  "monkey_humpers": {
+    "exerciseName": "Monkey Humpers",
+    "note": "From a standing position with hands behind the head, squat deeply. At the bottom, perform a small pelvic thrust or pulse before returning to the start.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:16.112Z"
+  },
+  "jack_webb": {
+    "exerciseName": "Jack Webb",
+    "note": "Perform a Merkin by lowering the chest from a plank position to the ground and pushing back up. Immediately follow this with four Air Squats, lowering the hips until thighs are parallel to the ground before returning to standing.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:20.742Z"
+  },
+  "overhead_shoulder_press": {
+    "exerciseName": "Overhead Shoulder Press",
+    "note": "Stand with weight at shoulder height, palms forward. Press the weight directly overhead until arms are fully extended, then lower it back to the shoulders.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:22.621Z"
+  },
+  "overhead_press": {
+    "exerciseName": "Overhead Press",
+    "note": "From a front rack position with the weight at shoulder height, extend the arms to press the weight vertically overhead until locked out, then control it back down to the shoulders.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:23.501Z"
+  },
+  "ray_lewis": {
+    "exerciseName": "Ray Lewis",
+    "note": "From a standing position, squat down, place hands on the ground, and kick feet back into a plank. Perform a plank jack (feet wide, then together), complete a push-up, jump feet forward, and explode into a jump with hands overhead.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:23.744Z"
+  },
+  "renegade_row": {
+    "exerciseName": "Renegade Row",
+    "note": "From a high plank position with hands gripping dumbbells, alternate pulling one dumbbell towards the ribcage while maintaining a stable core and resisting body rotation.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:24.273Z"
+  },
+  "smurf_jack": {
+    "exerciseName": "Smurf Jack",
+    "note": "Begin in a low squat with hands on the ground between your feet. From this position, jump your feet out to a wide squat stance and then back together, maintaining the low body and hands-on-ground position throughout.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:25.356Z"
+  },
+  "ranger_merkin": {
+    "exerciseName": "Ranger Merkin",
+    "note": "From a plank position, perform a push-up, then immediately stand up and execute an air squat before returning to the plank.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:25.495Z"
+  },
+  "wide_merkin": {
+    "exerciseName": "Wide Merkin",
+    "note": "From a plank position with hands significantly wider than shoulder-width apart, bend elbows to lower the chest towards the ground. Push back up by extending the elbows until arms are straight, returning to the starting position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:27.388Z"
+  },
+  "star_jump": {
+    "exerciseName": "Star Jump",
+    "note": "From a standing position with feet together and arms at your sides, explosively jump your feet wide apart while simultaneously swinging your arms up overhead to meet, then immediately jump back to the starting position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:27.474Z"
+  },
+  "walking_lunge": {
+    "exerciseName": "Walking Lunge",
+    "note": "From a standing position, step one leg forward and lower your hips until both knees are bent at approximately 90 degrees, with the front thigh parallel to the ground. Push off the front foot to bring the trailing leg forward, immediately stepping into the next lunge with the alternate leg.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:27.813Z"
+  },
+  "step_ups": {
+    "exerciseName": "Step Ups",
+    "note": "From a standing position before an elevated surface, step up onto it with one foot, driving through the heel to lift your body and bring the second foot up to meet the first. Then, step down with one foot, followed by the other, returning to the starting position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:28.363Z"
+  },
+  "werkin": {
+    "exerciseName": "Werkin",
+    "note": "From a plank position, step one foot wide to the outside of the corresponding hand, then rotate the torso and extend the same-side arm skyward. Return the hand and foot to the plank, alternating sides with a fluid motion.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:28.618Z"
+  },
+  "turkish_get_up": {
+    "exerciseName": "Turkish Get Up",
+    "note": "With one arm vertically extended, the body transitions from a supine position to standing upright and back down, by rolling to the opposite elbow and hand, bridging the hips, sweeping the free leg into a kneeling lunge, and standing.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:31.580Z"
+  },
+  "pull-up": {
+    "exerciseName": "Pull-up",
+    "note": "Start hanging from a bar with an overhand grip. Pull the body upwards, leading with the chest, until the chin clears the bar, then control the descent back to a full hanging position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:33.655Z"
+  },
+  "chicken_peckers": {
+    "exerciseName": "Chicken Peckers",
+    "note": "From a standing position with hands clasped behind the head, quickly flex the neck and upper back to dip the head and upper torso forward and down, then return to the upright position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:34.024Z"
+  },
+  "manmaker": {
+    "exerciseName": "Manmaker",
+    "note": "From a standing position with weights, drop into a plank, perform a renegade row with each arm, then a push-up, and jump feet to hands. Stand up, cleaning the weights to your shoulders, then press them overhead.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:34.761Z"
+  },
+  "bearpees": {
+    "exerciseName": "Bearpees",
+    "note": "Move forward on hands and feet in a bear crawl (knees hovering low to the ground), then complete a burpee by dropping to a plank, performing a push-up, jumping feet to hands, and standing or jumping up. This sequence is repeated.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:34.940Z"
+  },
+  "chaos_merkin": {
+    "exerciseName": "Chaos Merkin",
+    "note": "From a high plank position, perform a push-up; immediately reposition both hands to a new, random spot on the ground before lowering for the next repetition.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:35.105Z"
+  },
+  "australian_mountain_climbers": {
+    "exerciseName": "Australian Mountain Climbers",
+    "note": "From a high plank position, rapidly alternate driving one knee towards the opposite elbow, then return to plank and immediately switch legs. Maintain a stable core throughout the movement.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:40.111Z"
+  },
+  "dead_hang": {
+    "exerciseName": "Dead Hang",
+    "note": "Grip an overhead bar with both hands, palms facing forward or inward. Lift the feet off the ground, allowing the body to hang freely with arms fully extended and shoulders relaxed.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:42.088Z"
+  },
+  "single-leg_glute_bridges": {
+    "exerciseName": "Single-Leg Glute Bridges",
+    "note": "From a supine position with one leg bent (foot flat) and the other extended skyward, drive through the planted heel to lift the hips. Elevate the hips until the body forms a straight line from shoulder to knee, then controlledly lower back down.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:42.838Z"
+  },
+  "bus_driver": {
+    "exerciseName": "Bus Driver",
+    "note": "From a low plank or bear crawl position, extend arms forward and rotate the torso, shoulders, and extended arms side-to-side, mimicking turning a large steering wheel.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:43.534Z"
+  },
+  "gas_pumper": {
+    "exerciseName": "Gas Pumper",
+    "note": "From a standing position, hinge at the hips, extending one arm downwards and forwards as if gripping a gas nozzle. Then, rise back to standing while bringing the arm up and back towards the body, simulating pumping and racking.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:43.931Z"
+  },
+  "murder_bunny": {
+    "exerciseName": "Murder Bunny",
+    "note": "From a plank, perform a burpee by dropping chest to ground and explosively jumping feet forward to stand, then immediately follow with an alternating jump lunge for each leg.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:43.966Z"
+  },
+  "bulgarian_split_squat": {
+    "exerciseName": "Bulgarian Split Squat",
+    "note": "From a staggered stance with one foot elevated behind on a bench, lower your body by bending both knees simultaneously until the rear knee almost touches the ground. Drive through the front foot to extend your legs and return to the upright starting position.",
+    "category": "thang",
+    "updatedAt": "2026-10-11T02:50:45.058Z"
+  },
+  "rosalita": {
+    "exerciseName": "Rosalita",
+    "note": "Lie on your back with legs straight and elevated a few inches off the ground. Rapidly perform small, alternating up-and-down flutter kicks with each leg, keeping them straight and low.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:47.280Z"
+  },
+  "low_slow_flutter": {
+    "exerciseName": "Low Slow Flutter",
+    "note": "Lie on your back with legs straight, lifting them a few inches off the ground. Slowly and alternately raise one leg a few more inches while lowering the other, maintaining a continuous, controlled flutter just above the floor.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:47.383Z"
+  },
+  "lbc__little_baby_crunch_": {
+    "exerciseName": "LBC (Little Baby Crunch)",
+    "note": "Lie on your back with knees bent, feet flat, and hands behind your head or across your chest. Engaging your core, lift only your head and shoulders a few inches off the ground, then slowly lower back down.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:47.424Z"
+  },
+  "american_hammer": {
+    "exerciseName": "American Hammer",
+    "note": "From a plank position, alternate bringing each knee across the body towards the opposite elbow, then return to the plank before switching sides.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:47.447Z"
+  },
+  "pelvic_thrust": {
+    "exerciseName": "Pelvic Thrust",
+    "note": "From a supine position with knees bent and feet flat, engage glutes to lift hips towards the ceiling until a straight line forms from shoulders to knees, then lower back down.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:47.608Z"
+  },
+  "pickle_pounder": {
+    "exerciseName": "Pickle Pounder",
+    "note": "From a supine position with knees bent and feet flat, simultaneously lift the upper body into a crunch while extending one leg straight forward, hovering it a few inches above the ground. Return to the starting position and alternate legs with each subsequent crunch.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:49.289Z"
+  },
+  "box_cutter": {
+    "exerciseName": "Box Cutter",
+    "note": "Lie on your back with legs extended straight up towards the sky. Alternately cross one ankle over the other, rapidly scissoring the legs without letting them drop.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:51.518Z"
+  },
+  "hello_dolly": {
+    "exerciseName": "Hello Dolly",
+    "note": "Lying on your back with legs straight and slightly elevated a few inches off the ground, scissor your legs up and down, crossing one leg over the other, then reversing the cross.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:51.580Z"
+  },
+  "plank": {
+    "exerciseName": "Plank",
+    "note": "Lie face down, then push up to support the body's weight on forearms and toes. Maintain a straight, rigid line from head to heels, parallel to the floor, without sagging or arching the back.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:51.737Z"
+  },
+  "boat_canoe": {
+    "exerciseName": "Boat Canoe",
+    "note": "From a seated position with feet off the ground and torso leaned back (boat position), twist the torso side-to-side, mimicking a paddling motion with the arms (canoe).",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:51.794Z"
+  },
+  "big_boy_crunch": {
+    "exerciseName": "Big Boy Crunch",
+    "note": "Lie on your back with knees bent and feet flat, heels near glutes, hands crossed over chest. Engage core to lift your torso until elbows touch knees, then slowly return to the starting position.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:53.896Z"
+  },
+  "freddy_mercury": {
+    "exerciseName": "Freddy Mercury",
+    "note": "Lie on your back, then simultaneously lift your shoulders, twist your torso, and bring one knee towards your chest, aiming the opposite elbow towards that knee. Alternate sides continuously, extending the other leg straight out as you switch.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:54.908Z"
+  },
+  "dying_cockroach": {
+    "exerciseName": "Dying Cockroach",
+    "note": "Lie supine with arms and legs raised towards the ceiling. Simultaneously lower one arm and the opposite leg towards the ground, then return to the starting position before repeating with the alternate limbs.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:56.936Z"
+  },
+  "lbcs": {
+    "exerciseName": "LBCs",
+    "note": "LBCs begin prone, face down. From this position, the exerciser lifts their upper torso and shoulders off the ground by contracting the lower back and glutes, then lowers back down with control.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:57.148Z"
+  },
+  "flutters": {
+    "exerciseName": "Flutters",
+    "note": "Lie supine with legs extended and slightly elevated a few inches off the ground. Rapidly and alternately flutter each leg up and down a few inches without touching the ground.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:57.167Z"
+  },
+  "j-lo": {
+    "exerciseName": "J-Lo",
+    "note": "Lie supine with knees bent and feet flat on the floor, close to the glutes. Drive through the heels to lift the hips off the ground until the body forms a straight line from knees to shoulders, squeezing the glutes at the top, then lower.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:57.578Z"
+  },
+  "nolan_ryan": {
+    "exerciseName": "Nolan Ryan",
+    "note": "From a plank position, extend one arm to the side and perform a single-arm push-up with the other hand under the shoulder, lowering the chest to the ground, then push back up and alternate arms.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:57.845Z"
+  },
+  "homer_to_marge": {
+    "exerciseName": "Homer to Marge",
+    "note": "One partner lies supine, holding the ankles of a standing partner. As the supine partner performs a crunch, reaching upwards, the standing partner simultaneously descends into a squat, and both return to their starting positions together.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:50:59.665Z"
+  },
+  "penguin_crunches": {
+    "exerciseName": "Penguin Crunches",
+    "note": "Lie on your back with knees bent, feet flat, and arms at your sides, palms down. Lift your head and shoulders slightly, then crunch sideways, reaching one hand to touch the heel on that side, alternating quickly from left to right.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:51:01.431Z"
+  },
+  "v-up": {
+    "exerciseName": "V-Up",
+    "note": "Lying supine, simultaneously lift your torso and straight legs off the ground, reaching your hands towards your feet until your body forms a \"V\" shape, then return to the starting position.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:51:01.565Z"
+  },
+  "wwii_situps": {
+    "exerciseName": "WWII Situps",
+    "note": "Lie on your back with knees bent and feet flat on the ground, then engage your core to lift your torso until your chest touches your thighs. Control the movement as you lower your torso back to the starting position.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:51:01.794Z"
+  },
+  "x_o": {
+    "exerciseName": "X/O",
+    "note": "Start lying supine, extending arms and legs straight up and wide to form an \"X\" shape. Then, curl into a tight \"O\" by bringing knees to chest and hugging them with arms.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:51:01.877Z"
+  },
+  "pretzel_crunch": {
+    "exerciseName": "Pretzel Crunch",
+    "note": "Lie on your back with knees bent and feet flat. Cross one leg over the other's knee, place the hand on the same side as the crossed leg behind your head, and crunch, bringing the opposite elbow towards the crossed leg's knee; alternate sides.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:51:02.410Z"
+  },
+  "w": {
+    "exerciseName": "W",
+    "note": "From a high plank position, simultaneously step both hands and both feet outwards away from the body's center, then immediately step them back inwards to the starting plank.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:51:03.482Z"
+  },
+  "bear_planks": {
+    "exerciseName": "Bear Planks",
+    "note": "From a downward dog position (hips high, hands and feet on the ground), lower your hips until your body forms a straight line from head to heels, engaging your core.",
+    "category": "mary",
+    "updatedAt": "2026-10-11T02:51:06.742Z"
+  }
+}

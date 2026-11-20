@@ -1,0 +1,8 @@
+{
+  "firestore": {
+    "databaseId": "ai-studio-centralcoastf3we-c7f597b0-dcec-4d1e-88d6-9a94fa3a1755",
+    "rules": "firestore.rules",
+    "edition": "ENTERPRISE",
+    "dataAccessMode": "FIRESTORE_NATIVE"
+  }
+}
