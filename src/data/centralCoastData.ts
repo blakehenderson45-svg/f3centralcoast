@@ -95,7 +95,7 @@ export const WEEKLY_SCHEDULE: WorkoutSession[] = [
     aoName: 'SBCC Parking Lot',
     city: 'Santa Barbara, CA',
     style: 'Bootcamp',
-    shortTag: '45 MIN BOOTCAMP',
+    shortTag: '45 MIN COASTAL BOOTCAMP',
     address: '721 Cliff Dr (La Playa / Shoreline Lot), Santa Barbara, CA 93109',
     meetupDetails:
       'Meet in the SBCC parking lot above Leadbetter Beach before 5:30 AM sharp. Look for the circle of headlamps and guys warming up in the gloom.',
