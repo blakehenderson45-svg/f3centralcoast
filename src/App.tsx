@@ -5,6 +5,7 @@ import { MissionSection } from './components/MissionSection';
 import { ScheduleMapSection } from './components/ScheduleMapSection';
 import { FirstTimerSection } from './components/FirstTimerSection';
 import { CultureExplorerSection } from './components/CultureExplorerSection';
+import { PaxGallerySection } from './components/PaxGallerySection';
 import { LeadershipSection } from './components/LeadershipSection';
 import { JoinConnectSection } from './components/JoinConnectSection';
 import { Footer } from './components/Footer';
@@ -19,6 +20,7 @@ export default function App() {
         <ScheduleMapSection />
         <FirstTimerSection />
         <CultureExplorerSection />
+        <PaxGallerySection />
         <LeadershipSection />
         <JoinConnectSection />
       </main>
