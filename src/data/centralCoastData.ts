@@ -105,6 +105,27 @@ export const WEEKLY_SCHEDULE: WorkoutSession[] = [
     googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.4039,-119.6968',
   },
   {
+    id: 'tue-carp',
+    day: 'Tuesday',
+    dayIndex: 2,
+    startHour: 5,
+    startMinute: 30,
+    timeLabel: '5:30 AM – 6:15 AM',
+    durationMins: 45,
+    aoName: 'End of Linden Ave',
+    city: 'Carpinteria, CA',
+    style: 'Bootcamp',
+    shortTag: '45 MIN COASTAL BOOTCAMP',
+    address: 'Ocean End of Linden Ave at Carpinteria City Beach, Carpinteria, CA 93013',
+    meetupDetails:
+      'Gather right at the ocean end of Linden Ave beside Carpinteria City Beach. Salt air, surf sound, and hard miles before sunrise.',
+    parkingNote: 'Free early-morning street & beach lot parking at the foot of Linden Ave.',
+    fngFriendlyNote: 'Flat coastal terrain with beachside grit—great early-week option for Carpinteria & South County PAX.',
+    lat: 34.3936,
+    lng: -119.5249,
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.3936,-119.5249',
+  },
+  {
     id: 'thu-carp',
     day: 'Thursday',
     dayIndex: 4,
@@ -169,7 +190,7 @@ export const COASTAL_SPOTS: CoastalSpot[] = [
     type: 'primary',
     lat: 34.3936,
     lng: -119.5249,
-    scheduleSummary: 'Thursdays 5:30 AM',
+    scheduleSummary: 'Tuesdays & Thursdays 5:30 AM',
     address: 'Ocean End of Linden Ave at Carpinteria City Beach, Carpinteria, CA',
     terrainNote:
       'Primary Carpinteria launch point. Dawn workouts right beside the Pacific—blending boardwalk sprints, beach sand work, and bodyweight circuits.',
@@ -799,7 +820,7 @@ export function downloadWorkoutIcs(session: WorkoutSession) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = `central-coast-f3-${session.day.toLowerCase()}.ics`;
+  link.download = `central-coast-f3-${session.id}.ics`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

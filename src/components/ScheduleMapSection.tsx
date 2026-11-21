@@ -75,7 +75,7 @@ export function ScheduleMapSection() {
               SHOW UP. <span className="text-[#f85e5e]">POST IN THE GLOOM.</span>
             </h2>
             <p className="text-sm sm:text-base text-[#a6aab4] mt-3 max-w-2xl leading-relaxed">
-              We launch three times a week across{' '}
+              We launch four times a week across{' '}
               <strong className="text-white">Santa Barbara</strong> and{' '}
               <strong className="text-white">Carpinteria</strong>. Pick a morning below to inspect
               the exact launch point, parking details, and surrounding coastal terrain on our live

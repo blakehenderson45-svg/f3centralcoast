@@ -71,7 +71,7 @@ const PAX_RESOURCES = [
 ];
 
 export function JoinConnectSection() {
-  const [selectedId, setSelectedId] = useState<string>(WEEKLY_SCHEDULE[2].id); // Default to Saturday (FNG favorite)
+  const [selectedId, setSelectedId] = useState<string>('sat-sbcc'); // Default to Saturday (FNG favorite)
   const [copiedInvite, setCopiedInvite] = useState(false);
 
   const selectedSession =
@@ -109,7 +109,7 @@ export function JoinConnectSection() {
               </p>
 
               {/* Session Picker Buttons */}
-              <div className="grid sm:grid-cols-3 gap-2.5 mb-6">
+              <div className="grid sm:grid-cols-2 gap-2.5 mb-6">
                 {WEEKLY_SCHEDULE.map((session) => {
                   const active = session.id === selectedSession.id;
                   return (
