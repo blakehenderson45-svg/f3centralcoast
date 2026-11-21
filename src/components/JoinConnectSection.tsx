@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {
+  Mail,
   MessageCircle,
   CalendarPlus,
   Copy,
@@ -10,8 +11,6 @@ import {
   ShoppingBag,
   Map,
   ExternalLink,
-  ArrowUpRight,
-  Flame,
 } from 'lucide-react';
 import {
   WEEKLY_SCHEDULE,
@@ -21,46 +20,53 @@ import {
 
 const PAX_RESOURCES = [
   {
-    title: 'Central Coast Slack Workspace',
-    subtitle: 'Daily backblasts, HC roll calls, Coffeeteria & 2nd F updates',
-    href: CENTRAL_COAST_LINKS.slackWorkspace,
-    icon: MessageCircle,
+    title: 'Contact Us — F3CentralCoast@gmail.com',
+    subtitle: 'Questions before your first beatdown? Send us an email directly',
+    href: CENTRAL_COAST_LINKS.contactMailto,
+    icon: Mail,
+    isExternal: false,
   },
   {
-    title: 'FNG Slack Invite Link',
-    subtitle: 'New to Central Coast F3? Jump straight into the group chat',
-    href: CENTRAL_COAST_LINKS.fngSlackInvite,
-    icon: Flame,
+    title: 'Central Coast Slack Workspace',
+    subtitle: 'Existing PAX: daily backblasts, HC roll calls, Coffeeteria & 2nd F updates',
+    href: CENTRAL_COAST_LINKS.slackWorkspace,
+    icon: MessageCircle,
+    isExternal: true,
   },
   {
     title: 'Central Coast User Manual',
     subtitle: 'Everything a new PAX or Q needs to navigate our local AOs',
     href: CENTRAL_COAST_LINKS.userManual,
     icon: BookOpen,
+    isExternal: true,
   },
   {
     title: 'Video: How to Sign Up for a Q',
     subtitle: 'Ready to step up and lead a morning beatdown? Watch this quick walkthrough',
     href: CENTRAL_COAST_LINKS.howToSignUpQ,
     icon: CirclePlay,
+    isExternal: true,
   },
   {
     title: 'Video: How to Submit a BackBlast',
     subtitle: 'Log your beatdown, count the PAX, and celebrate FNGs on Slack',
     href: CENTRAL_COAST_LINKS.howToBackblast,
     icon: CirclePlay,
+    isExternal: true,
   },
   {
     title: 'F3 Nation Global Map',
     subtitle: 'Traveling out of town? Find free F3 workouts nationwide',
     href: CENTRAL_COAST_LINKS.f3NationMap,
     icon: Map,
+    isExternal: true,
   },
   {
     title: 'F3 Gear Store',
     subtitle: 'Official F3 Nation shirts, hats, and cold-morning gloom layers',
     href: CENTRAL_COAST_LINKS.f3Gear,
     icon: ShoppingBag,
+    isExternal: true,
   },
 ];
 
@@ -189,14 +195,11 @@ export function JoinConnectSection() {
                   )}
                 </button>
                 <a
-                  href={CENTRAL_COAST_LINKS.fngSlackInvite}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded bg-[#131417] hover:bg-[#1e2026] border border-[#f85e5e]/45 text-xs font-mono font-bold uppercase tracking-wider text-[#f85e5e] hover:text-white hover:bg-[#f85e5e] transition-colors"
+                  href={CENTRAL_COAST_LINKS.contactMailto}
+                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded bg-[#131417] hover:bg-[#f85e5e] border border-[#f85e5e]/45 text-xs font-mono font-bold uppercase tracking-wider text-[#f85e5e] hover:text-white transition-colors"
                 >
-                  <MessageCircle className="w-4 h-4" />
-                  <span>Join FNG Slack</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
+                  <Mail className="w-4 h-4" />
+                  <span>Contact Us</span>
                 </a>
               </div>
             </div>
@@ -212,8 +215,8 @@ export function JoinConnectSection() {
                 PLUG INTO CENTRAL COAST F3
               </h3>
               <p className="text-xs sm:text-sm text-[#9ca0aa] mt-1">
-                Already posted or ready to jump into Slack before your first beatdown? Everything
-                our local crew uses lives right here.
+                Have questions before your first post or already part of the PAX? Reach out or grab
+                the local resources below.
               </p>
             </div>
 
@@ -224,8 +227,8 @@ export function JoinConnectSection() {
                   <a
                     key={item.title}
                     href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
+                    target={item.isExternal ? '_blank' : undefined}
+                    rel={item.isExternal ? 'noreferrer' : undefined}
                     className="flex items-start gap-3.5 p-3 rounded-lg bg-[#141518] hover:bg-[#202229] border border-[#262831] hover:border-[#3c3f4d] transition-all group"
                   >
                     <div className="w-9 h-9 rounded bg-[#1e2027] border border-[#30333e] flex items-center justify-center text-[#f85e5e] shrink-0 group-hover:scale-105 transition-transform">
@@ -234,7 +237,9 @@ export function JoinConnectSection() {
                     <div className="min-w-0 flex-1">
                       <div className="text-sm font-semibold text-white group-hover:text-[#f85e5e] transition-colors flex items-center gap-1.5">
                         <span className="truncate">{item.title}</span>
-                        <ExternalLink className="w-3 h-3 text-[#6c707d] group-hover:text-[#f85e5e] shrink-0" />
+                        {item.isExternal && (
+                          <ExternalLink className="w-3 h-3 text-[#6c707d] group-hover:text-[#f85e5e] shrink-0" />
+                        )}
                       </div>
                       <p className="text-xs text-[#8d919c] mt-0.5 leading-snug">{item.subtitle}</p>
                     </div>
@@ -245,29 +250,38 @@ export function JoinConnectSection() {
           </div>
         </div>
 
-        {/* Final Gritty Callout Strip */}
-        <div className="rounded-xl bg-[#111214] border border-[#2d3039] p-6 sm:p-8 tactical-stripes flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div>
-            <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#f85e5e] font-bold mb-1.5">
-              CENTRAL COAST F3 • SANTA BARBARA & CARPINTERIA
-            </div>
-            <h3 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
-              THE WORLD NEEDS STRONGER MEN. START AT 5:30 AM.
-            </h3>
-            <p className="text-sm text-[#aeb2bc] mt-1">
-              Bring a friend, drop the excuses, and see what happens when you surround yourself with
-              men who refuse to settle.
-            </p>
+        {/* Final Gritty Callout Strip with Real SBCC Parking Lot Dawn Crew Photo */}
+        <div className="rounded-xl bg-[#111214] border border-[#2d3039] overflow-hidden tactical-stripes flex flex-col md:flex-row items-stretch">
+          <div className="md:w-56 lg:w-64 shrink-0 relative min-h-[220px] md:min-h-0">
+            <img
+              src="/images/pax-gloom-lot.jpg"
+              alt="Central Coast F3 dawn patrol crew in the SBCC parking lot at sunrise"
+              className="w-full h-full object-cover object-[center_30%] contrast-[1.06]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-transparent via-transparent to-[#111214]/90" />
           </div>
-          <a
-            href={CENTRAL_COAST_LINKS.fngSlackInvite}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded bg-[#f85e5e] hover:bg-[#ff6d6d] text-white font-display text-lg font-bold uppercase tracking-wider shadow-[0_8px_28px_rgba(248,94,94,0.35)] shrink-0 transition-all"
-          >
-            <MessageCircle className="w-5 h-5" />
-            <span>Say Hello on Slack</span>
-          </a>
+          <div className="flex-1 p-6 sm:p-8 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div>
+              <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-[#f85e5e] font-bold mb-1.5">
+                CENTRAL COAST F3 • SANTA BARBARA & CARPINTERIA
+              </div>
+              <h3 className="font-display text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">
+                THE WORLD NEEDS STRONGER MEN. START AT 5:30 AM.
+              </h3>
+              <p className="text-sm text-[#aeb2bc] mt-1">
+                Bring a friend, drop the excuses, and see what happens when you surround yourself
+                with men who refuse to settle. Questions? Email{' '}
+                <span className="text-white font-medium">{CENTRAL_COAST_LINKS.contactEmail}</span>.
+              </p>
+            </div>
+            <a
+              href={CENTRAL_COAST_LINKS.contactMailto}
+              className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded bg-[#f85e5e] hover:bg-[#ff6d6d] text-white font-display text-lg font-bold uppercase tracking-wider shadow-[0_8px_28px_rgba(248,94,94,0.35)] shrink-0 transition-all"
+            >
+              <Mail className="w-5 h-5" />
+              <span>Contact Us</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

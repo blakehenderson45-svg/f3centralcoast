@@ -88,22 +88,22 @@ export function MissionSection() {
           <div className="lg:col-span-6">
             <div className="relative rounded-xl overflow-hidden border border-[#2e313a] shadow-[0_20px_50px_rgba(0,0,0,0.6)] group">
               <img
-                src="/images/brotherhood-cot.jpg"
-                alt="Men standing shoulder to shoulder in a Circle of Trust along the Central Coast at sunrise"
-                className="w-full h-[320px] sm:h-[400px] object-cover object-center contrast-[1.06] group-hover:scale-[1.02] transition-transform duration-700"
+                src="/images/pax-family-stadium.jpg"
+                alt="Central Coast F3 dads and kids wearing Santa Barbara Fitness Fellowship Faith shirts at SBCC La Playa Stadium"
+                className="w-full h-[320px] sm:h-[400px] object-cover object-top contrast-[1.04] group-hover:scale-[1.02] transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f1012]/90 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 px-2.5 py-1 rounded bg-[#121315]/85 border border-[#353844] backdrop-blur-sm font-mono text-[10px] tracking-[0.18em] text-[#e4e5e8] uppercase">
-                CIRCLE OF TRUST (COT) • CENTRAL COAST
+                SANTA BARBARA F3 • LA PLAYA STADIUM
               </div>
               <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-4">
                 <div>
                   <div className="font-display text-lg sm:text-xl uppercase tracking-wide text-white">
-                    IRON SHARPENS IRON
+                    STRONGER FOR OUR FAMILIES & COMMUNITY
                   </div>
                   <p className="text-xs text-[#b8bcc6] mt-0.5">
-                    Every workout ends shoulder-to-shoulder—celebrating new brothers and lifting up
-                    real life challenges.
+                    Fitness, Fellowship, and Faith—leading by example for our families and the next
+                    generation on the Central Coast.
                   </p>
                 </div>
               </div>

@@ -84,9 +84,9 @@ export function FirstTimerSection() {
           <div className="lg:col-span-6 order-2 lg:order-1">
             <div className="relative rounded-xl overflow-hidden border border-[#2e313a] shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
               <img
-                src="/images/coastal-grind.jpg"
-                alt="Central Coast F3 men climbing coastal bluff steps together and picking up the six"
-                className="w-full h-[320px] sm:h-[400px] object-cover object-center contrast-[1.06]"
+                src="/images/pax-stadium-dawn.jpg"
+                alt="Central Coast F3 men standing shoulder to shoulder at sunrise on the SBCC La Playa Stadium field"
+                className="w-full h-[320px] sm:h-[400px] object-cover object-[center_22%] contrast-[1.05]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f1012]/90 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 px-2.5 py-1 rounded bg-[#f85e5e] text-white font-mono text-[10px] font-bold tracking-[0.16em] uppercase shadow">

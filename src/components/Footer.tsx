@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, ExternalLink } from 'lucide-react';
+import { MapPin, Clock, ExternalLink, Mail } from 'lucide-react';
 import { CENTRAL_COAST_LINKS, WEEKLY_SCHEDULE } from '../data/centralCoastData';
 
 export function Footer() {
@@ -82,13 +82,11 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={CENTRAL_COAST_LINKS.fngSlackInvite}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-1 text-[#f85e5e] hover:text-[#ff7a7a] font-semibold transition-colors"
+                  href={CENTRAL_COAST_LINKS.contactMailto}
+                  className="inline-flex items-center gap-1.5 text-[#f85e5e] hover:text-[#ff7a7a] font-semibold transition-colors"
                 >
-                  <span>Join Central Coast Slack</span>
-                  <ExternalLink className="w-3 h-3" />
+                  <Mail className="w-3 h-3" />
+                  <span>Contact Us (F3CentralCoast@gmail.com)</span>
                 </a>
               </li>
               <li>

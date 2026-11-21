@@ -30,13 +30,13 @@ export function HeroSection() {
       {/* Background Documentary Photo */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-gloom.jpg"
-          alt="Central Coast F3 men working out in the pre-dawn gloom along the Santa Barbara coastline"
-          className="w-full h-full object-cover object-center scale-[1.01] brightness-[0.65] contrast-[1.08]"
+          src="/images/pax-palms.jpg"
+          alt="Central Coast F3 men gathered together under the Santa Barbara coastal palm trees"
+          className="w-full h-full object-cover object-[center_45%] scale-[1.01] brightness-[0.58] contrast-[1.08]"
         />
         {/* Layered dark charcoal directional gradients for sharp readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0e0f11]/95 via-[#121315]/78 to-[#121315]/35" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#121315] via-transparent to-[#0e0f11]/75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0e0f11]/95 via-[#121315]/78 to-[#121315]/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#121315] via-transparent to-[#0e0f11]/70" />
         <div className="absolute inset-0 grit-overlay pointer-events-none" />
       </div>
 

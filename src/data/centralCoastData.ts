@@ -67,6 +67,9 @@ export interface LeadershipRole {
 export const CENTRAL_COAST_LINKS = {
   websiteDomain: 'f3centralcoast.com',
   websiteUrl: 'https://f3centralcoast.com',
+  contactEmail: 'F3CentralCoast@gmail.com',
+  contactMailto:
+    'mailto:F3CentralCoast@gmail.com?subject=Central%20Coast%20F3%20%E2%80%94%20New%20FNG%20%2F%20Contact',
   slackWorkspace: 'https://f3santabarbara.slack.com',
   fngSlackInvite:
     'https://join.slack.com/t/f3santabarbara/shared_invite/zt-43uzplwrp-GVtyDAhwi_jHoJyXmyJn9w',
@@ -602,7 +605,7 @@ export const FNG_FAQS = [
   },
   {
     q: 'Do I have to sign up, pay, or RSVP first?',
-    a: 'Never. There are zero fees, zero memberships, and zero contracts. You can literally just show up 5 minutes early at SBCC Parking Lot or End of Linden Ave, introduce yourself as an FNG, and jump right in. Joining our Slack ahead of time is totally optional—just helpful for weather updates and Coffeeteria locations.',
+    a: 'Never. There are zero fees, zero memberships, and zero contracts. You can literally just show up 5 minutes early at SBCC Parking Lot or End of Linden Ave, introduce yourself as an FNG, and jump right in. Have questions beforehand? Email us anytime at F3CentralCoast@gmail.com.',
   },
   {
     q: 'Wait—what happens with the "F3 Name"?',
@@ -726,7 +729,7 @@ export function downloadWorkoutIcs(session: WorkoutSession) {
     `SUMMARY:Central Coast F3 Beatdown — ${session.aoName}`,
     `LOCATION:${session.address}`,
     `URL:${CENTRAL_COAST_LINKS.websiteUrl}`,
-    `DESCRIPTION:${session.meetupDetails}\\n\\nFree, peer-led outdoor men's workout. Bring water, gloves (optional), and zero ego. Aye!\\nWebsite: ${CENTRAL_COAST_LINKS.websiteUrl}\\nSlack Invite: ${CENTRAL_COAST_LINKS.fngSlackInvite}`,
+    `DESCRIPTION:${session.meetupDetails}\\n\\nFree, peer-led outdoor men's workout. Bring water, gloves (optional), and zero ego. Aye!\\nWebsite: ${CENTRAL_COAST_LINKS.websiteUrl}\\nContact: ${CENTRAL_COAST_LINKS.contactEmail}`,
     'BEGIN:VALARM',
     'TRIGGER:-PT30M',
     'ACTION:DISPLAY',

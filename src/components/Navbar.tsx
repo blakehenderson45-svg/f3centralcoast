@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, MapPin, ArrowUpRight } from 'lucide-react';
+import { Menu, X, MapPin, Mail } from 'lucide-react';
 import { CENTRAL_COAST_LINKS } from '../data/centralCoastData';
 
 const NAV_LINKS = [
@@ -71,13 +71,11 @@ export function Navbar() {
             Schedule
           </a>
           <a
-            href={CENTRAL_COAST_LINKS.fngSlackInvite}
-            target="_blank"
-            rel="noreferrer"
+            href={CENTRAL_COAST_LINKS.contactMailto}
             className="whitespace-nowrap inline-flex items-center gap-1.5 px-3.5 py-2 text-[11px] xl:text-xs font-bold uppercase tracking-wider bg-[#f85e5e] hover:bg-[#ff6d6d] text-white rounded shadow-[0_4px_16px_rgba(248,94,94,0.3)] transition-all active:scale-[0.98]"
           >
-            <span>Join Slack</span>
-            <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
+            <Mail className="w-3.5 h-3.5 shrink-0" />
+            <span>Contact Us</span>
           </a>
         </div>
 
@@ -115,12 +113,10 @@ export function Navbar() {
               Schedule & Map
             </a>
             <a
-              href={CENTRAL_COAST_LINKS.fngSlackInvite}
-              target="_blank"
-              rel="noreferrer"
+              href={CENTRAL_COAST_LINKS.contactMailto}
               className="text-center py-2.5 px-3 rounded bg-[#f85e5e] text-xs font-bold uppercase tracking-wider text-white"
             >
-              Join Slack (FNG)
+              Contact Us
             </a>
           </div>
         </div>
