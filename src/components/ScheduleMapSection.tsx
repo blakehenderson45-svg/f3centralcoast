@@ -241,6 +241,18 @@ export function ScheduleMapSection() {
                 </button>
                 <button
                   type="button"
+                  onClick={() => {
+                    if (!showStations) setShowStations(true);
+                    setSelectedSpot(primaryAOs[2]);
+                    setSelectedSessionId('thu-sb-ruck');
+                    flyTo([34.455, -119.69], 12);
+                  }}
+                  className="px-3 py-1.5 rounded text-[11px] font-mono font-semibold uppercase tracking-wider bg-[#151619] hover:bg-[#23252d] text-[#d6d9e0] hover:text-white border border-[#2d3039] transition-colors"
+                >
+                  SB Foothills Ruck
+                </button>
+                <button
+                  type="button"
                   onClick={() => handleSelectSpot(primaryAOs[1])}
                   className="px-3 py-1.5 rounded text-[11px] font-mono font-semibold uppercase tracking-wider bg-[#151619] hover:bg-[#23252d] text-[#d6d9e0] hover:text-white border border-[#2d3039] transition-colors"
                 >
@@ -365,7 +377,7 @@ export function ScheduleMapSection() {
               </h3>
             </div>
             <span className="text-xs text-[#8d919c]">
-              Q’s regularly mosey the PAX between these coastal landmarks across Santa Barbara & Carpinteria
+              Coastal landmarks & foothill trailheads used across Santa Barbara, SB Foothills & Carpinteria
             </span>
           </div>
           <div className="flex flex-wrap gap-2">
