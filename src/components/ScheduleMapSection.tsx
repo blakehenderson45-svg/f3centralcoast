@@ -332,7 +332,7 @@ export function ScheduleMapSection() {
               </h3>
             </div>
             <span className="text-xs text-[#8d919c]">
-              Q’s regularly mosey the PAX between these coastal landmarks during SBCC beatdowns
+              Q’s regularly mosey the PAX between these coastal landmarks across Santa Barbara & Carpinteria
             </span>
           </div>
           <div className="flex flex-wrap gap-2">
