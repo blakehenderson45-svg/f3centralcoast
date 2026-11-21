@@ -9,6 +9,7 @@ import {
   Layers,
   Crosshair,
   Satellite,
+  Mail,
 } from 'lucide-react';
 import {
   WEEKLY_SCHEDULE,
@@ -42,20 +43,29 @@ export function ScheduleMapSection() {
     setSelectedSessionId(session.id);
     const matchingAo =
       COASTAL_SPOTS.find((s) =>
-        session.city.includes('Carpinteria') ? s.id === 'ao-linden-carp' : s.id === 'ao-sbcc-lot'
+        session.id === 'thu-sb-ruck'
+          ? s.id === 'ao-sb-foothills-ruck'
+          : session.city.includes('Carpinteria')
+            ? s.id === 'ao-linden-carp'
+            : s.id === 'ao-sbcc-lot'
       ) || COASTAL_SPOTS[0];
     setSelectedSpot(matchingAo);
-    flyTo([session.lat, session.lng], 14);
+    flyTo([session.lat, session.lng], session.locationVaries ? 13 : 14);
   };
 
   const handleSelectSpot = (spot: CoastalSpot) => {
     setSelectedSpot(spot);
     if (spot.id === 'ao-linden-carp') {
       setSelectedSessionId('thu-carp');
+    } else if (spot.id === 'ao-sb-foothills-ruck') {
+      setSelectedSessionId('thu-sb-ruck');
     } else if (spot.id === 'ao-sbcc-lot') {
       setSelectedSessionId('tue-sbcc');
     }
-    flyTo([spot.lat, spot.lng], spot.type === 'primary' ? 14 : 15);
+    flyTo(
+      [spot.lat, spot.lng],
+      spot.id === 'ao-sb-foothills-ruck' ? 13 : spot.type === 'primary' ? 14 : 15
+    );
   };
 
   return (
@@ -75,7 +85,7 @@ export function ScheduleMapSection() {
               SHOW UP. <span className="text-[#f85e5e]">POST IN THE GLOOM.</span>
             </h2>
             <p className="text-sm sm:text-base text-[#a6aab4] mt-3 max-w-2xl leading-relaxed">
-              We launch four times a week across{' '}
+              We launch five times a week across{' '}
               <strong className="text-white">Santa Barbara</strong> and{' '}
               <strong className="text-white">Carpinteria</strong>. Pick a morning below to inspect
               the exact launch point, parking details, and surrounding coastal terrain on our live
@@ -127,9 +137,11 @@ export function ScheduleMapSection() {
                         </span>
                         <span
                           className={`font-mono text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded ${
-                            session.day === 'Saturday'
-                              ? 'bg-[#eab308]/15 text-[#eab308] border border-[#eab308]/30'
-                              : 'bg-[#f85e5e]/15 text-[#f85e5e] border border-[#f85e5e]/30'
+                            session.locationVaries
+                              ? 'bg-[#38bdf8]/15 text-[#38bdf8] border border-[#38bdf8]/30'
+                              : session.day === 'Saturday'
+                                ? 'bg-[#eab308]/15 text-[#eab308] border border-[#eab308]/30'
+                                : 'bg-[#f85e5e]/15 text-[#f85e5e] border border-[#f85e5e]/30'
                           }`}
                         >
                           {session.shortTag}
@@ -159,16 +171,27 @@ export function ScheduleMapSection() {
 
                   {/* Quick Actions */}
                   <div className="flex flex-wrap items-center gap-2">
-                    <a
-                      href={session.googleMapsUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-[#f85e5e] hover:bg-[#ff6d6d] text-white text-xs font-bold uppercase tracking-wider transition-colors"
-                    >
-                      <Navigation className="w-3.5 h-3.5" />
-                      <span>Directions</span>
-                    </a>
+                    {session.locationVaries ? (
+                      <a
+                        href={`mailto:${CENTRAL_COAST_LINKS.contactEmail}?subject=Central%20Coast%20F3%20%E2%80%94%20Thursday%20Foothills%20Ruck%20Location`}
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-[#f85e5e] hover:bg-[#ff6d6d] text-white text-xs font-bold uppercase tracking-wider transition-colors"
+                      >
+                        <Mail className="w-3.5 h-3.5" />
+                        <span>Contact to Verify</span>
+                      </a>
+                    ) : (
+                      <a
+                        href={session.googleMapsUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-[#f85e5e] hover:bg-[#ff6d6d] text-white text-xs font-bold uppercase tracking-wider transition-colors"
+                      >
+                        <Navigation className="w-3.5 h-3.5" />
+                        <span>Directions</span>
+                      </a>
+                    )}
                     <button
                       type="button"
                       onClick={(e) => {
@@ -305,15 +328,25 @@ export function ScheduleMapSection() {
                       {selectedSpot.terrainNote}
                     </p>
                   </div>
-                  <a
-                    href={selectedSpot.googleMapsUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded bg-[#f85e5e] hover:bg-[#ff6d6d] text-white text-xs font-bold uppercase tracking-wider shrink-0 transition-colors"
-                  >
-                    <Navigation className="w-3.5 h-3.5" />
-                    <span>Google Maps</span>
-                  </a>
+                  {selectedSpot.id === 'ao-sb-foothills-ruck' ? (
+                    <a
+                      href={`mailto:${CENTRAL_COAST_LINKS.contactEmail}?subject=Central%20Coast%20F3%20%E2%80%94%20Thursday%20Foothills%20Ruck%20Location`}
+                      className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded bg-[#f85e5e] hover:bg-[#ff6d6d] text-white text-xs font-bold uppercase tracking-wider shrink-0 transition-colors"
+                    >
+                      <Mail className="w-3.5 h-3.5" />
+                      <span>Verify Location</span>
+                    </a>
+                  ) : (
+                    <a
+                      href={selectedSpot.googleMapsUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded bg-[#f85e5e] hover:bg-[#ff6d6d] text-white text-xs font-bold uppercase tracking-wider shrink-0 transition-colors"
+                    >
+                      <Navigation className="w-3.5 h-3.5" />
+                      <span>Google Maps</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

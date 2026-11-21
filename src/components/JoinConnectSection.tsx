@@ -78,7 +78,10 @@ export function JoinConnectSection() {
     WEEKLY_SCHEDULE.find((s) => s.id === selectedId) || WEEKLY_SCHEDULE[0];
 
   const handleCopyBuddyInvite = () => {
-    const text = `Hey man — come hit a free outdoor men's workout with me at Central Coast F3!\n\nWhen: ${selectedSession.day}s, ${selectedSession.timeLabel}\nWhere: ${selectedSession.aoName} (${selectedSession.city})\nDirections: ${selectedSession.googleMapsUrl}\nInfo & Map: ${CENTRAL_COAST_LINKS.websiteUrl}\n\n100% free, all fitness levels, rain or shine. Just bring water and show up 5 mins early!`;
+    const locationLine = selectedSession.locationVaries
+      ? `Where: ${selectedSession.aoName} (Location varies — email ${CENTRAL_COAST_LINKS.contactEmail} to verify)`
+      : `Where: ${selectedSession.aoName} (${selectedSession.city})\nDirections: ${selectedSession.googleMapsUrl}`;
+    const text = `Hey man — come hit a free outdoor men's workout with me at Central Coast F3!\n\nWhen: ${selectedSession.day}s, ${selectedSession.timeLabel}\n${locationLine}\nInfo & Map: ${CENTRAL_COAST_LINKS.websiteUrl}\n\n100% free, all fitness levels, rain or shine. Just bring water and show up 5 mins early!`;
     navigator.clipboard.writeText(text).then(() => {
       setCopiedInvite(true);
       setTimeout(() => setCopiedInvite(false), 2500);
@@ -165,15 +168,25 @@ export function JoinConnectSection() {
                   <CalendarPlus className="w-4 h-4" />
                   <span>Add to Calendar (.ICS)</span>
                 </button>
-                <a
-                  href={selectedSession.googleMapsUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded bg-[#252730] hover:bg-[#2f323e] border border-[#3a3d4a] text-white font-display text-base font-semibold uppercase tracking-wider transition-colors"
-                >
-                  <Navigation className="w-4 h-4 text-[#f85e5e]" />
-                  <span>Open Directions</span>
-                </a>
+                {selectedSession.locationVaries ? (
+                  <a
+                    href={`mailto:${CENTRAL_COAST_LINKS.contactEmail}?subject=Central%20Coast%20F3%20%E2%80%94%20Thursday%20Foothills%20Ruck%20Location`}
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded bg-[#252730] hover:bg-[#2f323e] border border-[#3a3d4a] text-white font-display text-base font-semibold uppercase tracking-wider transition-colors"
+                  >
+                    <Mail className="w-4 h-4 text-[#f85e5e]" />
+                    <span>Email to Verify Spot</span>
+                  </a>
+                ) : (
+                  <a
+                    href={selectedSession.googleMapsUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded bg-[#252730] hover:bg-[#2f323e] border border-[#3a3d4a] text-white font-display text-base font-semibold uppercase tracking-wider transition-colors"
+                  >
+                    <Navigation className="w-4 h-4 text-[#f85e5e]" />
+                    <span>Open Directions</span>
+                  </a>
+                )}
               </div>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 pt-3 border-t border-[#262830]">

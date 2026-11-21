@@ -26,6 +26,7 @@ export interface WorkoutSession {
   lat: number;
   lng: number;
   googleMapsUrl: string;
+  locationVaries?: boolean;
 }
 
 export interface CoastalSpot {
@@ -147,6 +148,29 @@ export const WEEKLY_SCHEDULE: WorkoutSession[] = [
     googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.3936,-119.5249',
   },
   {
+    id: 'thu-sb-ruck',
+    day: 'Thursday',
+    dayIndex: 4,
+    startHour: 5,
+    startMinute: 30,
+    timeLabel: '5:30 AM – 6:15 AM',
+    durationMins: 45,
+    aoName: 'Santa Barbara Foothills Ruck',
+    city: 'Santa Barbara, CA',
+    style: 'Ruck',
+    shortTag: 'RUCK • LOCATION VARIES',
+    address: 'Santa Barbara Foothills (Location Varies — Contact Us to Verify)',
+    meetupDetails:
+      'Early-morning weighted ruck through the Santa Barbara foothills. Starting location varies week to week—email F3CentralCoast@gmail.com beforehand so we can confirm this week’s trailhead.',
+    parkingNote: 'Trailhead parking varies by route—confirmed weekly prior to launch.',
+    fngFriendlyNote:
+      'Location can vary—contact us at F3CentralCoast@gmail.com to verify this week’s meetup spot if you’re an FNG.',
+    lat: 34.4425,
+    lng: -119.7015,
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.4425,-119.7015',
+    locationVaries: true,
+  },
+  {
     id: 'sat-sbcc',
     day: 'Saturday',
     dayIndex: 6,
@@ -195,6 +219,19 @@ export const COASTAL_SPOTS: CoastalSpot[] = [
     terrainNote:
       'Primary Carpinteria launch point. Dawn workouts right beside the Pacific—blending boardwalk sprints, beach sand work, and bodyweight circuits.',
     googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.3936,-119.5249',
+  },
+  {
+    id: 'ao-sb-foothills-ruck',
+    name: 'Santa Barbara Foothills Ruck (Location Varies)',
+    city: 'Santa Barbara',
+    type: 'primary',
+    lat: 34.4425,
+    lng: -119.7015,
+    scheduleSummary: 'Thursdays 5:30 AM • Contact Us to Verify',
+    address: 'Santa Barbara Foothills (Varies Weekly — Email F3CentralCoast@gmail.com)',
+    terrainNote:
+      'Rotating Santa Barbara foothills ruck routes. Launch point varies week to week—contact F3CentralCoast@gmail.com to verify this week’s meetup spot if you are an FNG.',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.4425,-119.7015',
   },
   {
     id: 'station-sbcc-stadium',
