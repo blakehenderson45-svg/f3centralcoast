@@ -121,9 +121,9 @@ export const WEEKLY_SCHEDULE: WorkoutSession[] = [
       'Gather right at the ocean end of Linden Ave beside Carpinteria City Beach. Salt air, surf sound, and hard miles before sunrise.',
     parkingNote: 'Free early-morning street & beach lot parking at the foot of Linden Ave.',
     fngFriendlyNote: 'Flat coastal terrain with beachside grit—great midpoint option for South County & Ventura-side PAX.',
-    lat: 34.3982,
-    lng: -119.5190,
-    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.3982,-119.5190',
+    lat: 34.3936,
+    lng: -119.5249,
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.3936,-119.5249',
   },
   {
     id: 'sat-sbcc',
@@ -167,13 +167,13 @@ export const COASTAL_SPOTS: CoastalSpot[] = [
     name: 'End of Linden Ave (Primary AO)',
     city: 'Carpinteria',
     type: 'primary',
-    lat: 34.3982,
-    lng: -119.5190,
+    lat: 34.3936,
+    lng: -119.5249,
     scheduleSummary: 'Thursdays 5:30 AM',
-    address: 'Foot of Linden Ave at Carpinteria City Beach, Carpinteria, CA',
+    address: 'Ocean End of Linden Ave at Carpinteria City Beach, Carpinteria, CA',
     terrainNote:
       'Primary Carpinteria launch point. Dawn workouts right beside the Pacific—blending boardwalk sprints, beach sand work, and bodyweight circuits.',
-    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.3982,-119.5190',
+    googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=34.3936,-119.5249',
   },
   {
     id: 'station-sbcc-stadium',
@@ -312,7 +312,8 @@ export const F3_LEXICON: LexiconEntry[] = [
   {
     term: 'FNG',
     category: 'Core',
-    definition: 'Friendly New Guy. A man showing up to his very first F3 beatdown. At the end of your first post, the PAX give you your official F3 nickname.',
+    definition:
+      'Friendly New Guy. A man new to F3. To earn his official F3 nickname, an FNG must attend a minimum of 3 workouts—after which the PAX name him during Circle of Trust.',
   },
   {
     term: 'AO',
@@ -609,7 +610,7 @@ export const FNG_FAQS = [
   },
   {
     q: 'Wait—what happens with the "F3 Name"?',
-    a: 'At the end of your first beatdown during Circle of Trust, we ask a few fun questions about your background, job, hobbies, or hometown—and the PAX bestow your official F3 nickname. It is a rite of passage into the brotherhood (and always in good fun).',
+    a: 'To earn an official F3 nickname, an FNG must attend a minimum of 3 workouts. Once you complete your 3rd beatdown, during Circle of Trust we ask a few fun questions about your background, job, hobbies, or hometown—and the PAX bestow your F3 name. It is a rite of passage into the brotherhood (and always in good fun).',
   },
   {
     q: 'What does "Faith" mean? Is F3 a church group?',

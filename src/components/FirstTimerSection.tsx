@@ -52,7 +52,7 @@ const BEATDOWN_PHASES = [
     iconColor: 'text-[#38bdf8]',
     icon: Users,
     summary:
-      'Count-O-Rama, Name-O-Rama (where FNGs earn their official F3 name!), announcements, and Ball of Man intentions before heading into the day.',
+      'Count-O-Rama, Name-O-Rama (FNGs earn their official F3 nickname after attending a minimum of 3 workouts!), announcements, and Ball of Man intentions before heading into the day.',
   },
 ];
 
