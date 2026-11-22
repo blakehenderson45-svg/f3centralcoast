@@ -7,7 +7,6 @@ const NAV_LINKS = [
   { label: 'Schedule', href: '#schedule' },
   { label: 'First Timers', href: '#first-timers' },
   { label: 'Culture', href: '#culture' },
-  { label: 'Leadership', href: '#leadership' },
   { label: 'Resources', href: '#join' },
 ];
 
